@@ -13,7 +13,8 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/tb_theme/css/tb_theme.css"
+app_include_css = "/assets/tb_theme/css/tb_theme.css"
+# app_include_css = "/assets/tb_theme/css-rtl/tb_theme.css"
 # app_include_js = "/assets/tb_theme/js/tb_theme.js"
 
 # include js, css files in header of web template
@@ -96,6 +97,17 @@ app_license = "MIT"
 # 		"on_trash": "method"
 #	}
 # }
+
+doc_events = {
+	"Sales Invoice" :  {
+		"after_insert": "tb_theme.tasks.create_qr_code",
+		"on_trash": "tb_theme.tasks.delete_qr_code_file"
+	},
+	"POS Invoice": {
+		"after_insert": "tb_theme.tasks.create_qr_code",
+		"on_trash": "tb_theme.tasks.delete_qr_code_file"
+    }
+}
 
 # Scheduled Tasks
 # ---------------

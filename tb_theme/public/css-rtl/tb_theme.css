@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Book Antiqua';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Book Antiqua'), url('https://fonts.cdnfonts.com/s/13818/BKANT.woff') format('woff');
+}
+@font-face {
+    font-family: 'Book Antiqua';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Book Antiqua'), url('https://fonts.cdnfonts.com/s/13818/ANTQUAI.woff') format('woff');
+}
+@font-face {
+    font-family: 'Book Antiqua';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Book Antiqua'), url('https://fonts.cdnfonts.com/s/13818/ANTQUAB.woff') format('woff');
+}
+@font-face {
+    font-family: 'Book Antiqua';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Book Antiqua'), url('https://fonts.cdnfonts.com/s/13818/ANTQUABI.woff') format('woff');
+}
+
+.onboarding-widget-box {
+    display: none;
+}
+
+html, body {
+    font-family: Book Antiqua;
+}
